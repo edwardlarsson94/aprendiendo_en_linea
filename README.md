@@ -73,8 +73,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 use the following command:
 
-docker run -p 3000:3000 -v $(pwd):/app --name my-react-app aprendiendo_en_linea_frontend
+`docker run -p 3000:3000 -v $(pwd):/app --name my-react-app aprendiendo_en_linea_frontend`
 
 This option allows Docker to monitor the current directory, and any changes made to the source code will automatically be reflected in the application. However, keep in mind that this may increase the compilation and runtime of the application.
 
+### Start a container with the same name as an existing container that is still running:
 
+Rename the existing container before starting a new one with the same name.
+
+Stop and remove the existing container before starting a new one with the same name.
+
+You can stop and remove a container using the following commands:
+
+`docker stop my-react-app`
+`docker rm my-react-app`
